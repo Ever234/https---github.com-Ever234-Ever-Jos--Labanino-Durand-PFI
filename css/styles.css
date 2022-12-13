@@ -1,0 +1,275 @@
+/* Preferences du sites */
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  list-style:none;
+}
+/* police d'ecriture et couleur de fond avec un media querry adaptatif pour garder une belle apparence de site  */
+body{
+  font-family: Arial;
+  background-color:blanchedalmond;
+}
+@media (max-width:400px){
+  body{
+      flex-direction:column;
+      height: auto;
+  }
+  body {
+      flex-basis:100%;
+      text-align: center;
+  }
+}
+/* couleur du menu avec la taille */
+nav{
+  background:red;
+  height: 40px;
+}
+
+/* Couleur du logo Ferrari */
+label.Logo{
+  color :beige;
+  font-size:35px;
+}
+/* direction de l'ecriture du menu */
+nav ul{
+ float: right;
+}
+/* display des elements  */
+nav ul li{
+  display:inline-block;
+  margin: 5px;
+}
+
+/* couleur des lettres du menu avec les espaces ect..  */
+nav ul li a {
+  display: flex;
+  align-items: center;
+  color:bisque;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding:7px 10px;
+}
+
+/* couleur du background effet selected */
+a.actiive,a:hover{
+  background:black ;
+}
+
+/* placement dans l'espace du contenu */
+.container{
+  margin:10px;
+  width:70%;
+  padding:10px;
+}
+/* placement de l'espace des images */
+img{
+  float: inline-start;
+  width: 300px;
+  height: 260px;
+  padding:0 10px 0 0 ;
+}
+
+/* le placement du texte quand il arrive a la limite */
+.texte{
+  text-align:justify;
+}
+
+/*L'espace du texte des pilotes avec les images   */
+.header{
+  margin-bottom: 10px;
+  font-family: Verdana;
+}
+
+/* Placement de L'entete "Galerie des champions"*/
+.entete{
+  padding-left: 500px;
+  margin-bottom: 15px;
+  font-family: 'Trebuchet MS';
+}
+
+/* PLacement de l'Entete "Acceuil" */
+.Acceuil{
+  padding-left:350px;
+  margin-bottom: 40px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+/* PLacement de l'image d'acceuil et dimensions */
+.enzo{
+width: 30%;
+height: 30%;
+padding-left:30px;
+float:left;
+}
+
+/* placement du texte de la troisieme page */
+.head3{
+  padding-left:300px;
+  font-family: 'Segoe UI';
+}
+
+/* placement du texte de la troisieme page  */
+.head4{
+  padding-left:300px;
+  margin-bottom:30px;
+  font-family: 'Courier New';
+}
+
+/* placement de La video de la trosime page  */
+.video{
+  width:400px;
+  margin-top: 90px;
+  padding-left: 100px;
+}
+
+/* placement du texte de la troisieme page */
+.head5{
+  padding-left:300px;
+  margin-top: 90px; 
+  font-family:'Arial Narrow';
+}
+
+/* placement du texte de la troisieme page */
+.Entete3{
+  padding-left:300px;
+  margin-bottom: 100px;
+  font-family: 'Arial Narrow';
+}
+
+/* placement de La video de la trosime page */
+.video2{
+  width:400px;
+  margin-top: 90px;
+  padding-left: 30px;
+}
+
+/* placement du texte de la troisieme page */
+.head6{
+  padding-left:350px;
+  font-family:  'Lucida Sans Unicode';
+}
+
+.imageMoments{
+  width:400px;
+}
+
+/* Entete de la quatrieme page  */
+.e4{
+  padding-left: 600px;
+  padding-bottom: 40px;
+  font-family:Times;
+}
+
+/* qualite de la photo mise a taille complete   */
+.succes2{
+width:fit-content;
+}
+
+.succes{
+padding-left: 1130px;
+width: fit-content;
+}
+
+/* placement de  l'image page histoire  */
+.gt3{
+  width: fit-content;
+  padding-left: 500px;
+}
+
+/* placement du titre de paragrpahe  dans la page histoire  */
+.headH{
+  padding-top: 22px;
+  padding-left: 200px;
+  font-family:  'Arial Narrow Bold';
+}
+
+/* placement du sous titre dans la page histoire  */
+.sousH{
+  padding-left:200px;
+  padding-bottom: 25px;
+  font-family: Helvetica;
+}
+
+/* placement du texte dans la page histoire  */
+.textH{
+  max-width: 70%;
+  text-align: center;
+  padding-left: 250px;
+}
+
+/* Placement de la deuxieme image dans la page histoire  */
+.imageH{
+  padding-left: 200px;
+  max-width: 20%;
+  height: 225px;
+}
+
+/* placement des sous-Titre dans la page histoire  */
+.sousH2{
+  padding-left: 530px;
+  padding-bottom: 10px;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+/*  dimensions du tableau */
+.container{
+  padding-left: 200px;
+  display: grid;
+  grid-template-columns: 40% 40%;
+}
+/* textures et couleurs du tableau  */
+.container1{
+  background-color: bisque;
+  border: 1px solid red;
+  padding:2px;
+  text-align: center;
+}
+/* emplacement de la colone qui va etre a droite  */
+.droite{
+  padding-left: 400px;
+}
+/* emplacement de la colone en bas de celle a droite  */
+.bas{
+  padding-left: 400px;
+}
+/* changement de type de caligraphie */
+.carlos{
+  font-family: 'Times New Roman';
+}
+/* positionnement des elements a supperposer */
+.couleurs1{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+/* couleur et position du premier element a superposer */
+.couleurenfant{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 600px;
+  opacity: 0.7;
+  background: red;
+ 
+}
+/* couleur et position du deuxieme element a superposer */
+.couleurenfant2{
+  z-index: 1;
+  margin: 30px;
+  background-color: yellow;
+}
+/* creation d'une grille avec le display flex */
+.flexTable{
+ display: flex; 
+}
+/* espace des elemts de la grille avec le display flex*/
+.flexTable>div{
+  margin: 10px;
+  font-size: 20px;
+}
+/* changement de police d'ecriture */
+.h3{
+  font-family:monospace;
+}
